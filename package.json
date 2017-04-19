@@ -1,0 +1,19 @@
+{
+  "name": "my-finances",
+  "version": "1.0.0",
+  "description": "a project to practice...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicojunior/my-finances.git"
+  },
+  "author": "Chico Júnior <juniordev2@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chicojunior/my-finances/issues"
+  },
+  "homepage": "https://github.com/chicojunior/my-finances#readme"
+}
