@@ -3,17 +3,40 @@
   "version": "1.0.0",
   "description": "a project to practice...",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chicojunior/my-finances.git"
-  },
   "author": "Chico Júnior <juniordev2@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chicojunior/my-finances/issues"
   },
-  "homepage": "https://github.com/chicojunior/my-finances#readme"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicojunior/my-finances.git"
+  },
+  "homepage": "https://github.com/chicojunior/my-finances#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "graphql": "^0.9.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^0.9.5"
+  },
+  "scripts": {
+    "build-css": "stylus -u nib src/ -o src/",
+    "watch-css": "npm run build-css && stylus -u nib src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "transpile": "babel --presets es2015,es2016,react,stage-3 src/*.jsx -o public/assets/js/bundle.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
